@@ -1,0 +1,58 @@
+{
+    "name": "brainfuck-syntax",
+    "displayName": "Brainfuck Syntax",
+    "description": "Syntax highlighting support for Brainfuck.",
+    "version": "0.0.1",
+    "publisher": "attilabuti",
+    "license": "MIT",
+    "readme": "README.md",
+    "icon": "images/icon.png",
+    "author": {
+        "name": "Attila Buti",
+        "url": "www.attilabuti.com"
+    },
+    "homepage": "https://github.com/attilabuti/brainfuck-syntax#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/attilabuti/brainfuck-syntax"
+    },
+    "bugs": {
+        "url": "https://github.com/attilabuti/brainfuck-syntax/issues"
+    },
+    "galleryBanner": {
+        "color": "#242424",
+        "theme": "dark"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "brainfuck",
+        "vscode",
+        "language",
+        "highlight",
+        "syntax"
+    ],
+    "engines": {
+        "vscode": "^1.6.0"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "brainfuck",
+            "aliases": [
+                "Brainfuck",
+                "brainfuck"
+            ],
+            "extensions": [
+                ".b",
+                ".bf"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "brainfuck",
+            "scopeName": "source.brainfuck",
+            "path": "./syntaxes/brainfuck.tmLanguage.json"
+        }]
+    }
+}
